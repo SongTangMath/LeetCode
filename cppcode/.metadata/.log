@@ -1,0 +1,626 @@
+!SESSION 2019-06-29 12:19:31.478 -----------------------------------------------
+eclipse.buildId=4.2.0-vfinal-2015-09-25T11:10:29Z-Typesafe
+java.version=12
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.m2e.core 4 0 2019-06-29 12:20:09.955
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.m2e.core [202]
+  Unresolved requirement: Require-Bundle: org.eclipse.m2e.maven.runtime; bundle-version="[1.6.0,1.7.0)"
+    -> Bundle-SymbolicName: org.eclipse.m2e.maven.runtime; bundle-version="1.6.2.20150902-0001"; singleton:="false"
+       org.eclipse.m2e.maven.runtime [212]
+         Unresolved requirement: Require-Bundle: org.eclipse.m2e.maven.runtime.slf4j.simple; bundle-version="[1.6.0,1.7.0)"
+           -> Bundle-SymbolicName: org.eclipse.m2e.maven.runtime.slf4j.simple; bundle-version="1.6.2.20150902-0001"; singleton:="false"
+              org.eclipse.m2e.maven.runtime.slf4j.simple [213]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(|(&(osgi.ee=JavaSE)(version=1.7))(&(osgi.ee=JavaSE)(version=1.8)))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.m2e.core.ui 4 0 2019-06-29 12:20:09.978
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.m2e.core.ui [203]
+  Unresolved requirement: Require-Bundle: org.eclipse.m2e.core; bundle-version="[1.6.0,1.7.0)"
+    -> Bundle-SymbolicName: org.eclipse.m2e.core; bundle-version="1.6.2.20150902-0002"; singleton:="true"
+       org.eclipse.m2e.core [202]
+         Unresolved requirement: Require-Bundle: org.eclipse.m2e.maven.runtime; bundle-version="[1.6.0,1.7.0)"
+           -> Bundle-SymbolicName: org.eclipse.m2e.maven.runtime; bundle-version="1.6.2.20150902-0001"; singleton:="false"
+              org.eclipse.m2e.maven.runtime [212]
+                Unresolved requirement: Require-Bundle: org.eclipse.m2e.maven.runtime.slf4j.simple; bundle-version="[1.6.0,1.7.0)"
+                  -> Bundle-SymbolicName: org.eclipse.m2e.maven.runtime.slf4j.simple; bundle-version="1.6.2.20150902-0001"; singleton:="false"
+                     org.eclipse.m2e.maven.runtime.slf4j.simple [213]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(|(&(osgi.ee=JavaSE)(version=1.7))(&(osgi.ee=JavaSE)(version=1.8)))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.m2e.discovery 4 0 2019-06-29 12:20:09.989
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.m2e.discovery [204]
+  Unresolved requirement: Import-Package: org.apache.maven.plugin; provider="m2e"
+    -> Export-Package: org.apache.maven.plugin; bundle-symbolic-name="org.eclipse.m2e.maven.runtime"; bundle-version="1.6.2.20150902-0001"; provider="m2e"; version="0.0.0"; mandatory:="provider"
+       org.eclipse.m2e.maven.runtime [212]
+         Unresolved requirement: Require-Bundle: org.eclipse.m2e.maven.runtime.slf4j.simple; bundle-version="[1.6.0,1.7.0)"
+           -> Bundle-SymbolicName: org.eclipse.m2e.maven.runtime.slf4j.simple; bundle-version="1.6.2.20150902-0001"; singleton:="false"
+              org.eclipse.m2e.maven.runtime.slf4j.simple [213]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(|(&(osgi.ee=JavaSE)(version=1.7))(&(osgi.ee=JavaSE)(version=1.8)))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.m2e.editor 4 0 2019-06-29 12:20:10.004
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.m2e.editor [205]
+  Unresolved requirement: Require-Bundle: org.eclipse.m2e.core; bundle-version="[1.6.0,1.7.0)"
+    -> Bundle-SymbolicName: org.eclipse.m2e.core; bundle-version="1.6.2.20150902-0002"; singleton:="true"
+       org.eclipse.m2e.core [202]
+         Unresolved requirement: Require-Bundle: org.eclipse.m2e.maven.runtime; bundle-version="[1.6.0,1.7.0)"
+           -> Bundle-SymbolicName: org.eclipse.m2e.maven.runtime; bundle-version="1.6.2.20150902-0001"; singleton:="false"
+              org.eclipse.m2e.maven.runtime [212]
+                Unresolved requirement: Require-Bundle: org.eclipse.m2e.maven.runtime.slf4j.simple; bundle-version="[1.6.0,1.7.0)"
+                  -> Bundle-SymbolicName: org.eclipse.m2e.maven.runtime.slf4j.simple; bundle-version="1.6.2.20150902-0001"; singleton:="false"
+                     org.eclipse.m2e.maven.runtime.slf4j.simple [213]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(|(&(osgi.ee=JavaSE)(version=1.7))(&(osgi.ee=JavaSE)(version=1.8)))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.m2e.editor.xml 4 0 2019-06-29 12:20:10.033
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.m2e.editor.xml [206]
+  Unresolved requirement: Require-Bundle: org.eclipse.m2e.core; bundle-version="[1.6.0,1.7.0)"
+    -> Bundle-SymbolicName: org.eclipse.m2e.core; bundle-version="1.6.2.20150902-0002"; singleton:="true"
+       org.eclipse.m2e.core [202]
+         Unresolved requirement: Require-Bundle: org.eclipse.m2e.maven.runtime; bundle-version="[1.6.0,1.7.0)"
+           -> Bundle-SymbolicName: org.eclipse.m2e.maven.runtime; bundle-version="1.6.2.20150902-0001"; singleton:="false"
+              org.eclipse.m2e.maven.runtime [212]
+                Unresolved requirement: Require-Bundle: org.eclipse.m2e.maven.runtime.slf4j.simple; bundle-version="[1.6.0,1.7.0)"
+                  -> Bundle-SymbolicName: org.eclipse.m2e.maven.runtime.slf4j.simple; bundle-version="1.6.2.20150902-0001"; singleton:="false"
+                     org.eclipse.m2e.maven.runtime.slf4j.simple [213]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(|(&(osgi.ee=JavaSE)(version=1.7))(&(osgi.ee=JavaSE)(version=1.8)))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.m2e.jdt 4 0 2019-06-29 12:20:10.045
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.m2e.jdt [207]
+  Unresolved requirement: Require-Bundle: org.eclipse.m2e.maven.runtime; bundle-version="[1.6.0,1.7.0)"
+    -> Bundle-SymbolicName: org.eclipse.m2e.maven.runtime; bundle-version="1.6.2.20150902-0001"; singleton:="false"
+       org.eclipse.m2e.maven.runtime [212]
+         Unresolved requirement: Require-Bundle: org.eclipse.m2e.maven.runtime.slf4j.simple; bundle-version="[1.6.0,1.7.0)"
+           -> Bundle-SymbolicName: org.eclipse.m2e.maven.runtime.slf4j.simple; bundle-version="1.6.2.20150902-0001"; singleton:="false"
+              org.eclipse.m2e.maven.runtime.slf4j.simple [213]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(|(&(osgi.ee=JavaSE)(version=1.7))(&(osgi.ee=JavaSE)(version=1.8)))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.m2e.launching 4 0 2019-06-29 12:20:10.056
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.m2e.launching [209]
+  Unresolved requirement: Require-Bundle: org.eclipse.m2e.maven.runtime; bundle-version="[1.6.0,1.7.0)"
+    -> Bundle-SymbolicName: org.eclipse.m2e.maven.runtime; bundle-version="1.6.2.20150902-0001"; singleton:="false"
+       org.eclipse.m2e.maven.runtime [212]
+         Unresolved requirement: Require-Bundle: org.eclipse.m2e.maven.runtime.slf4j.simple; bundle-version="[1.6.0,1.7.0)"
+           -> Bundle-SymbolicName: org.eclipse.m2e.maven.runtime.slf4j.simple; bundle-version="1.6.2.20150902-0001"; singleton:="false"
+              org.eclipse.m2e.maven.runtime.slf4j.simple [213]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(|(&(osgi.ee=JavaSE)(version=1.7))(&(osgi.ee=JavaSE)(version=1.8)))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.m2e.model.edit 4 0 2019-06-29 12:20:10.069
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.m2e.model.edit [214]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(|(&(osgi.ee=JavaSE)(version=1.7))(&(osgi.ee=JavaSE)(version=1.8)))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.m2e.profiles.core 4 0 2019-06-29 12:20:10.080
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.m2e.profiles.core [215]
+  Unresolved requirement: Require-Bundle: org.eclipse.m2e.core; bundle-version="[1.6.0,1.7.0)"; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.m2e.core; bundle-version="1.6.2.20150902-0002"; singleton:="true"
+       org.eclipse.m2e.core [202]
+         Unresolved requirement: Require-Bundle: org.eclipse.m2e.maven.runtime; bundle-version="[1.6.0,1.7.0)"
+           -> Bundle-SymbolicName: org.eclipse.m2e.maven.runtime; bundle-version="1.6.2.20150902-0001"; singleton:="false"
+              org.eclipse.m2e.maven.runtime [212]
+                Unresolved requirement: Require-Bundle: org.eclipse.m2e.maven.runtime.slf4j.simple; bundle-version="[1.6.0,1.7.0)"
+                  -> Bundle-SymbolicName: org.eclipse.m2e.maven.runtime.slf4j.simple; bundle-version="1.6.2.20150902-0001"; singleton:="false"
+                     org.eclipse.m2e.maven.runtime.slf4j.simple [213]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(|(&(osgi.ee=JavaSE)(version=1.7))(&(osgi.ee=JavaSE)(version=1.8)))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.m2e.profiles.ui 4 0 2019-06-29 12:20:10.090
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.m2e.profiles.ui [216]
+  Unresolved requirement: Require-Bundle: org.eclipse.m2e.core.ui; bundle-version="[1.6.0,1.7.0)"
+    -> Bundle-SymbolicName: org.eclipse.m2e.core.ui; bundle-version="1.6.2.20150902-0002"; singleton:="true"
+       org.eclipse.m2e.core.ui [203]
+         Unresolved requirement: Require-Bundle: org.eclipse.m2e.core; bundle-version="[1.6.0,1.7.0)"
+           -> Bundle-SymbolicName: org.eclipse.m2e.core; bundle-version="1.6.2.20150902-0002"; singleton:="true"
+              org.eclipse.m2e.core [202]
+                Unresolved requirement: Require-Bundle: org.eclipse.m2e.maven.runtime; bundle-version="[1.6.0,1.7.0)"
+                  -> Bundle-SymbolicName: org.eclipse.m2e.maven.runtime; bundle-version="1.6.2.20150902-0001"; singleton:="false"
+                     org.eclipse.m2e.maven.runtime [212]
+                       Unresolved requirement: Require-Bundle: org.eclipse.m2e.maven.runtime.slf4j.simple; bundle-version="[1.6.0,1.7.0)"
+                         -> Bundle-SymbolicName: org.eclipse.m2e.maven.runtime.slf4j.simple; bundle-version="1.6.2.20150902-0001"; singleton:="false"
+                            org.eclipse.m2e.maven.runtime.slf4j.simple [213]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(|(&(osgi.ee=JavaSE)(version=1.7))(&(osgi.ee=JavaSE)(version=1.8)))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.m2e.refactoring 4 0 2019-06-29 12:20:10.100
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.m2e.refactoring [217]
+  Unresolved requirement: Require-Bundle: org.eclipse.m2e.core; bundle-version="[1.6.0,1.7.0)"
+    -> Bundle-SymbolicName: org.eclipse.m2e.core; bundle-version="1.6.2.20150902-0002"; singleton:="true"
+       org.eclipse.m2e.core [202]
+         Unresolved requirement: Require-Bundle: org.eclipse.m2e.maven.runtime; bundle-version="[1.6.0,1.7.0)"
+           -> Bundle-SymbolicName: org.eclipse.m2e.maven.runtime; bundle-version="1.6.2.20150902-0001"; singleton:="false"
+              org.eclipse.m2e.maven.runtime [212]
+                Unresolved requirement: Require-Bundle: org.eclipse.m2e.maven.runtime.slf4j.simple; bundle-version="[1.6.0,1.7.0)"
+                  -> Bundle-SymbolicName: org.eclipse.m2e.maven.runtime.slf4j.simple; bundle-version="1.6.2.20150902-0001"; singleton:="false"
+                     org.eclipse.m2e.maven.runtime.slf4j.simple [213]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(|(&(osgi.ee=JavaSE)(version=1.7))(&(osgi.ee=JavaSE)(version=1.8)))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.maven.ide.eclipse.scala 4 0 2019-06-29 12:20:10.105
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.maven.ide.eclipse.scala [302]
+  Unresolved requirement: Require-Bundle: org.eclipse.m2e.core
+    -> Bundle-SymbolicName: org.eclipse.m2e.core; bundle-version="1.6.2.20150902-0002"; singleton:="true"
+       org.eclipse.m2e.core [202]
+         Unresolved requirement: Require-Bundle: org.eclipse.m2e.maven.runtime; bundle-version="[1.6.0,1.7.0)"
+           -> Bundle-SymbolicName: org.eclipse.m2e.maven.runtime; bundle-version="1.6.2.20150902-0001"; singleton:="false"
+              org.eclipse.m2e.maven.runtime [212]
+                Unresolved requirement: Require-Bundle: org.eclipse.m2e.maven.runtime.slf4j.simple; bundle-version="[1.6.0,1.7.0)"
+                  -> Bundle-SymbolicName: org.eclipse.m2e.maven.runtime.slf4j.simple; bundle-version="1.6.2.20150902-0001"; singleton:="false"
+                     org.eclipse.m2e.maven.runtime.slf4j.simple [213]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(|(&(osgi.ee=JavaSE)(version=1.7))(&(osgi.ee=JavaSE)(version=1.8)))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.osgi 4 0 2019-06-29 12:20:38.677
+!MESSAGE Application error
+!STACK 1
+java.lang.NoClassDefFoundError: org/w3c/dom/stylesheets/StyleSheet
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngineManager.getCSSSWTEngine(ThemeEngineManager.java:41)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngineManager.getEngineForDisplay(ThemeEngineManager.java:30)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createThemeEngine(PartRenderingEngine.java:1428)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.initializeStyling(PartRenderingEngine.java:1281)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1036)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+Caused by: java.lang.ClassNotFoundException: org.w3c.dom.stylesheets.StyleSheet cannot be found by org.eclipse.e4.ui.css.core_0.10.100.v20140424-2042
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:432)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:337)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 25 more
+!SESSION 2019-06-29 12:20:49.490 -----------------------------------------------
+eclipse.buildId=4.2.0-vfinal-2015-09-25T11:10:29Z-Typesafe
+java.version=12
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.m2e.core 4 0 2019-06-29 12:20:50.806
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.m2e.core [202]
+  Unresolved requirement: Require-Bundle: org.eclipse.m2e.maven.runtime; bundle-version="[1.6.0,1.7.0)"
+    -> Bundle-SymbolicName: org.eclipse.m2e.maven.runtime; bundle-version="1.6.2.20150902-0001"; singleton:="false"
+       org.eclipse.m2e.maven.runtime [212]
+         Unresolved requirement: Require-Bundle: org.eclipse.m2e.maven.runtime.slf4j.simple; bundle-version="[1.6.0,1.7.0)"
+           -> Bundle-SymbolicName: org.eclipse.m2e.maven.runtime.slf4j.simple; bundle-version="1.6.2.20150902-0001"; singleton:="false"
+              org.eclipse.m2e.maven.runtime.slf4j.simple [213]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(|(&(osgi.ee=JavaSE)(version=1.7))(&(osgi.ee=JavaSE)(version=1.8)))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.m2e.core.ui 4 0 2019-06-29 12:20:50.817
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.m2e.core.ui [203]
+  Unresolved requirement: Require-Bundle: org.eclipse.m2e.core; bundle-version="[1.6.0,1.7.0)"
+    -> Bundle-SymbolicName: org.eclipse.m2e.core; bundle-version="1.6.2.20150902-0002"; singleton:="true"
+       org.eclipse.m2e.core [202]
+         Unresolved requirement: Require-Bundle: org.eclipse.m2e.maven.runtime; bundle-version="[1.6.0,1.7.0)"
+           -> Bundle-SymbolicName: org.eclipse.m2e.maven.runtime; bundle-version="1.6.2.20150902-0001"; singleton:="false"
+              org.eclipse.m2e.maven.runtime [212]
+                Unresolved requirement: Require-Bundle: org.eclipse.m2e.maven.runtime.slf4j.simple; bundle-version="[1.6.0,1.7.0)"
+                  -> Bundle-SymbolicName: org.eclipse.m2e.maven.runtime.slf4j.simple; bundle-version="1.6.2.20150902-0001"; singleton:="false"
+                     org.eclipse.m2e.maven.runtime.slf4j.simple [213]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(|(&(osgi.ee=JavaSE)(version=1.7))(&(osgi.ee=JavaSE)(version=1.8)))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.m2e.discovery 4 0 2019-06-29 12:20:50.827
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.m2e.discovery [204]
+  Unresolved requirement: Import-Package: org.apache.maven.plugin; provider="m2e"
+    -> Export-Package: org.apache.maven.plugin; bundle-symbolic-name="org.eclipse.m2e.maven.runtime"; bundle-version="1.6.2.20150902-0001"; provider="m2e"; version="0.0.0"; mandatory:="provider"
+       org.eclipse.m2e.maven.runtime [212]
+         Unresolved requirement: Require-Bundle: org.eclipse.m2e.maven.runtime.slf4j.simple; bundle-version="[1.6.0,1.7.0)"
+           -> Bundle-SymbolicName: org.eclipse.m2e.maven.runtime.slf4j.simple; bundle-version="1.6.2.20150902-0001"; singleton:="false"
+              org.eclipse.m2e.maven.runtime.slf4j.simple [213]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(|(&(osgi.ee=JavaSE)(version=1.7))(&(osgi.ee=JavaSE)(version=1.8)))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.m2e.editor 4 0 2019-06-29 12:20:50.836
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.m2e.editor [205]
+  Unresolved requirement: Require-Bundle: org.eclipse.m2e.core; bundle-version="[1.6.0,1.7.0)"
+    -> Bundle-SymbolicName: org.eclipse.m2e.core; bundle-version="1.6.2.20150902-0002"; singleton:="true"
+       org.eclipse.m2e.core [202]
+         Unresolved requirement: Require-Bundle: org.eclipse.m2e.maven.runtime; bundle-version="[1.6.0,1.7.0)"
+           -> Bundle-SymbolicName: org.eclipse.m2e.maven.runtime; bundle-version="1.6.2.20150902-0001"; singleton:="false"
+              org.eclipse.m2e.maven.runtime [212]
+                Unresolved requirement: Require-Bundle: org.eclipse.m2e.maven.runtime.slf4j.simple; bundle-version="[1.6.0,1.7.0)"
+                  -> Bundle-SymbolicName: org.eclipse.m2e.maven.runtime.slf4j.simple; bundle-version="1.6.2.20150902-0001"; singleton:="false"
+                     org.eclipse.m2e.maven.runtime.slf4j.simple [213]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(|(&(osgi.ee=JavaSE)(version=1.7))(&(osgi.ee=JavaSE)(version=1.8)))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.m2e.editor.xml 4 0 2019-06-29 12:20:50.844
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.m2e.editor.xml [206]
+  Unresolved requirement: Require-Bundle: org.eclipse.m2e.core; bundle-version="[1.6.0,1.7.0)"
+    -> Bundle-SymbolicName: org.eclipse.m2e.core; bundle-version="1.6.2.20150902-0002"; singleton:="true"
+       org.eclipse.m2e.core [202]
+         Unresolved requirement: Require-Bundle: org.eclipse.m2e.maven.runtime; bundle-version="[1.6.0,1.7.0)"
+           -> Bundle-SymbolicName: org.eclipse.m2e.maven.runtime; bundle-version="1.6.2.20150902-0001"; singleton:="false"
+              org.eclipse.m2e.maven.runtime [212]
+                Unresolved requirement: Require-Bundle: org.eclipse.m2e.maven.runtime.slf4j.simple; bundle-version="[1.6.0,1.7.0)"
+                  -> Bundle-SymbolicName: org.eclipse.m2e.maven.runtime.slf4j.simple; bundle-version="1.6.2.20150902-0001"; singleton:="false"
+                     org.eclipse.m2e.maven.runtime.slf4j.simple [213]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(|(&(osgi.ee=JavaSE)(version=1.7))(&(osgi.ee=JavaSE)(version=1.8)))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.m2e.jdt 4 0 2019-06-29 12:20:50.851
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.m2e.jdt [207]
+  Unresolved requirement: Require-Bundle: org.eclipse.m2e.maven.runtime; bundle-version="[1.6.0,1.7.0)"
+    -> Bundle-SymbolicName: org.eclipse.m2e.maven.runtime; bundle-version="1.6.2.20150902-0001"; singleton:="false"
+       org.eclipse.m2e.maven.runtime [212]
+         Unresolved requirement: Require-Bundle: org.eclipse.m2e.maven.runtime.slf4j.simple; bundle-version="[1.6.0,1.7.0)"
+           -> Bundle-SymbolicName: org.eclipse.m2e.maven.runtime.slf4j.simple; bundle-version="1.6.2.20150902-0001"; singleton:="false"
+              org.eclipse.m2e.maven.runtime.slf4j.simple [213]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(|(&(osgi.ee=JavaSE)(version=1.7))(&(osgi.ee=JavaSE)(version=1.8)))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.m2e.launching 4 0 2019-06-29 12:20:50.858
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.m2e.launching [209]
+  Unresolved requirement: Require-Bundle: org.eclipse.m2e.maven.runtime; bundle-version="[1.6.0,1.7.0)"
+    -> Bundle-SymbolicName: org.eclipse.m2e.maven.runtime; bundle-version="1.6.2.20150902-0001"; singleton:="false"
+       org.eclipse.m2e.maven.runtime [212]
+         Unresolved requirement: Require-Bundle: org.eclipse.m2e.maven.runtime.slf4j.simple; bundle-version="[1.6.0,1.7.0)"
+           -> Bundle-SymbolicName: org.eclipse.m2e.maven.runtime.slf4j.simple; bundle-version="1.6.2.20150902-0001"; singleton:="false"
+              org.eclipse.m2e.maven.runtime.slf4j.simple [213]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(|(&(osgi.ee=JavaSE)(version=1.7))(&(osgi.ee=JavaSE)(version=1.8)))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.m2e.model.edit 4 0 2019-06-29 12:20:50.866
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.m2e.model.edit [214]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(|(&(osgi.ee=JavaSE)(version=1.7))(&(osgi.ee=JavaSE)(version=1.8)))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.m2e.profiles.core 4 0 2019-06-29 12:20:50.877
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.m2e.profiles.core [215]
+  Unresolved requirement: Require-Bundle: org.eclipse.m2e.core; bundle-version="[1.6.0,1.7.0)"; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.m2e.core; bundle-version="1.6.2.20150902-0002"; singleton:="true"
+       org.eclipse.m2e.core [202]
+         Unresolved requirement: Require-Bundle: org.eclipse.m2e.maven.runtime; bundle-version="[1.6.0,1.7.0)"
+           -> Bundle-SymbolicName: org.eclipse.m2e.maven.runtime; bundle-version="1.6.2.20150902-0001"; singleton:="false"
+              org.eclipse.m2e.maven.runtime [212]
+                Unresolved requirement: Require-Bundle: org.eclipse.m2e.maven.runtime.slf4j.simple; bundle-version="[1.6.0,1.7.0)"
+                  -> Bundle-SymbolicName: org.eclipse.m2e.maven.runtime.slf4j.simple; bundle-version="1.6.2.20150902-0001"; singleton:="false"
+                     org.eclipse.m2e.maven.runtime.slf4j.simple [213]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(|(&(osgi.ee=JavaSE)(version=1.7))(&(osgi.ee=JavaSE)(version=1.8)))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.m2e.profiles.ui 4 0 2019-06-29 12:20:50.884
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.m2e.profiles.ui [216]
+  Unresolved requirement: Require-Bundle: org.eclipse.m2e.core.ui; bundle-version="[1.6.0,1.7.0)"
+    -> Bundle-SymbolicName: org.eclipse.m2e.core.ui; bundle-version="1.6.2.20150902-0002"; singleton:="true"
+       org.eclipse.m2e.core.ui [203]
+         Unresolved requirement: Require-Bundle: org.eclipse.m2e.core; bundle-version="[1.6.0,1.7.0)"
+           -> Bundle-SymbolicName: org.eclipse.m2e.core; bundle-version="1.6.2.20150902-0002"; singleton:="true"
+              org.eclipse.m2e.core [202]
+                Unresolved requirement: Require-Bundle: org.eclipse.m2e.maven.runtime; bundle-version="[1.6.0,1.7.0)"
+                  -> Bundle-SymbolicName: org.eclipse.m2e.maven.runtime; bundle-version="1.6.2.20150902-0001"; singleton:="false"
+                     org.eclipse.m2e.maven.runtime [212]
+                       Unresolved requirement: Require-Bundle: org.eclipse.m2e.maven.runtime.slf4j.simple; bundle-version="[1.6.0,1.7.0)"
+                         -> Bundle-SymbolicName: org.eclipse.m2e.maven.runtime.slf4j.simple; bundle-version="1.6.2.20150902-0001"; singleton:="false"
+                            org.eclipse.m2e.maven.runtime.slf4j.simple [213]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(|(&(osgi.ee=JavaSE)(version=1.7))(&(osgi.ee=JavaSE)(version=1.8)))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.m2e.refactoring 4 0 2019-06-29 12:20:50.891
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.m2e.refactoring [217]
+  Unresolved requirement: Require-Bundle: org.eclipse.m2e.core; bundle-version="[1.6.0,1.7.0)"
+    -> Bundle-SymbolicName: org.eclipse.m2e.core; bundle-version="1.6.2.20150902-0002"; singleton:="true"
+       org.eclipse.m2e.core [202]
+         Unresolved requirement: Require-Bundle: org.eclipse.m2e.maven.runtime; bundle-version="[1.6.0,1.7.0)"
+           -> Bundle-SymbolicName: org.eclipse.m2e.maven.runtime; bundle-version="1.6.2.20150902-0001"; singleton:="false"
+              org.eclipse.m2e.maven.runtime [212]
+                Unresolved requirement: Require-Bundle: org.eclipse.m2e.maven.runtime.slf4j.simple; bundle-version="[1.6.0,1.7.0)"
+                  -> Bundle-SymbolicName: org.eclipse.m2e.maven.runtime.slf4j.simple; bundle-version="1.6.2.20150902-0001"; singleton:="false"
+                     org.eclipse.m2e.maven.runtime.slf4j.simple [213]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(|(&(osgi.ee=JavaSE)(version=1.7))(&(osgi.ee=JavaSE)(version=1.8)))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.maven.ide.eclipse.scala 4 0 2019-06-29 12:20:50.898
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.maven.ide.eclipse.scala [302]
+  Unresolved requirement: Require-Bundle: org.eclipse.m2e.core
+    -> Bundle-SymbolicName: org.eclipse.m2e.core; bundle-version="1.6.2.20150902-0002"; singleton:="true"
+       org.eclipse.m2e.core [202]
+         Unresolved requirement: Require-Bundle: org.eclipse.m2e.maven.runtime; bundle-version="[1.6.0,1.7.0)"
+           -> Bundle-SymbolicName: org.eclipse.m2e.maven.runtime; bundle-version="1.6.2.20150902-0001"; singleton:="false"
+              org.eclipse.m2e.maven.runtime [212]
+                Unresolved requirement: Require-Bundle: org.eclipse.m2e.maven.runtime.slf4j.simple; bundle-version="[1.6.0,1.7.0)"
+                  -> Bundle-SymbolicName: org.eclipse.m2e.maven.runtime.slf4j.simple; bundle-version="1.6.2.20150902-0001"; singleton:="false"
+                     org.eclipse.m2e.maven.runtime.slf4j.simple [213]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(|(&(osgi.ee=JavaSE)(version=1.7))(&(osgi.ee=JavaSE)(version=1.8)))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.osgi 4 0 2019-06-29 12:20:57.938
+!MESSAGE Application error
+!STACK 1
+java.lang.NoClassDefFoundError: org/w3c/dom/stylesheets/StyleSheet
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngineManager.getCSSSWTEngine(ThemeEngineManager.java:41)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngineManager.getEngineForDisplay(ThemeEngineManager.java:30)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createThemeEngine(PartRenderingEngine.java:1428)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.initializeStyling(PartRenderingEngine.java:1281)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1036)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+Caused by: java.lang.ClassNotFoundException: org.w3c.dom.stylesheets.StyleSheet cannot be found by org.eclipse.e4.ui.css.core_0.10.100.v20140424-2042
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:432)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:337)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 25 more

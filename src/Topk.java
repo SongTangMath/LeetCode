@@ -1,7 +1,7 @@
 
 public class Topk {
 private int findTopk(int []nums,int low,int high,int k) {
-	//要求high-low+1>=k>=1
+	//瑕佹眰high-low+1>=k>=1
 	int begin=low,end=high;
 	int pivot=nums[begin];
 	while(begin<end) {
@@ -10,8 +10,8 @@ private int findTopk(int []nums,int low,int high,int k) {
 		while(begin<end&&nums[begin]<=pivot)begin++;
 		swap(nums,begin,end);
 	}
-	//nums[low..begin=end]共有end-low+1个数
-	//nums[begin=end,..high]共有high-end+1个数
+	//nums[low..begin=end]鍏辨湁end-low+1涓暟
+	//nums[begin=end,..high]鍏辨湁high-end+1涓暟
 	if(high-end+1==k)return nums[end];
 	else if(high-end+1>k)return findTopk(nums,end+1,high,k);
 	else return findTopk(nums,low,begin-1,k-(high-end+1));
